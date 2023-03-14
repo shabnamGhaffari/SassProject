@@ -1,0 +1,33 @@
+$color-dark:#262626;
+$color-black:#000;
+$color-primary:#d3ab55;
+$color-secondary:#bbb;
+$font-dancingScript:'Dancing Script';
+
+@mixin flexLayout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin textStyles($transform:uppercase){
+    font-weight: 300;
+    letter-spacing:2px ;
+    text-transform: $transform;
+}
+@mixin center($topValue){
+    position: absolute;
+    top:$topValue;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+*{
+    margin:0;
+    padding:0
+}
+body{
+    background-color: $color-dark;
+}
+%fullSpace{
+    width:100%;
+    height:100%;
+}
